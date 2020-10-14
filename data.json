@@ -1,12 +1,12 @@
 {
     "id" : 1,
+	"time" : "09:24:37",
+	"longitude" : 153.056519,
+	"latitude" : -27.509984,
     "data" : [
         {
-            "time" : 3,
-            "temp" : 20,
-            "turb" : 3,
-            "long" : 0,
-            "lati" : 1
+            "temperature" : 20,
+            "turbidity" : 3
         }
     ]
     
