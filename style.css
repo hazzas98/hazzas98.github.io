@@ -1,0 +1,15 @@
+* {
+    background-color: #1c91c7;
+}
+
+#title {
+    color: #189e49;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 4em;
+}
+
+#under {
+    text-align: center;
+}

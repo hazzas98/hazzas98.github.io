@@ -1,7 +1,7 @@
 const header = document.querySelector('header');
 const section = document.querySelector('section');
 
-let requestURL = 'https://hazzas98.github.io/data.json';
+let requestURL = 'http://floodmonitoring.epizy.com/data.json';
 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -15,11 +15,11 @@ request.onload = function() {
 }
 
 function populateHeader(jsonObj) {
-    const myH1 = document.createElement('h1');
-    myH1.textContent = jsonObj['id'];
+    const myH1 = document.createElement('h2');
+    myH1.textContent = 'ID number: ' + jsonObj['id'];
     header.appendChild(myH1);
 
     const myPara = document.createElement('p');
-    myPara.textContent = 'Longitude: ' + jsonObj['longitude'] + ' // Latitude: ' + jsonObj['latitude'];
+    myPara.textContent = 'Latitude: ' + jsonObj['latitude']  + ', Longitude: ' + jsonObj['longitude'];
     header.appendChild(myPara);
 }
